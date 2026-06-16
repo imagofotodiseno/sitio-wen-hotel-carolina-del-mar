@@ -60,9 +60,9 @@ export default function Navigation() {
             className="flex items-center gap-2"
           >
             <img 
-              src="/imagenes/logotipo-hotel-carolina-del-mar-bahia-solano.svg" 
+              src={`${import.meta.env.BASE_URL}imagenes/Icono-hotel-carolina-del-mar-bahia-solano.svg`} 
               alt="Hotel Carolina del Mar" 
-              className={`h-10 w-auto transition-all duration-300 ${isScrolled ? '' : 'brightness-0 invert'}`} 
+              className={`h-12 w-auto transition-all duration-300 ${isScrolled ? '' : 'brightness-0 invert'}`} 
             />
           </a>
 
