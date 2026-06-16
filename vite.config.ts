@@ -5,7 +5,7 @@ import { inspectAttr } from 'kimi-plugin-inspect-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: './',
+  base: '/sitio-wen-hotel-carolina-del-mar/',
   plugins: [inspectAttr(), react()],
   server: {
     port: 3000,
