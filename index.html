@@ -3,203 +3,650 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Hotel Carolina del Mar. Hospedaje de lujo en Bahía Solano, Chocó.">
-    <title>Hotel Carolina del Mar</title>
+    <meta name="description" content="Hotel Carolina del Mar. Hospedaje de lujo en Bahía Solano, Chocó. Vive la cultura, la naturaleza y la calidez del Pacífico colombiano.">
+    <meta name="keywords" content="Hotel Bahía Solano, Chocó, Pacífico colombiano, turismo, ecoturismo, ballenas, playa">
+    <title>Hotel Carolina del Mar – Bahía Solano, Chocó</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-</head>
+  </head>
 <body>
 
-    <header class="hero">
-        <div class="hero-content">
-            <h1>Hotel Carolina del Mar [cite: 1]</h1>
-            <h2>Bahía Solano, Chocó [cite: 2] - Donde el Pacífico Te Espera [cite: 3]</h2>
-            <p>Hospedaje de lujo en el corazón de la biodiversidad colombiana. Vive la naturaleza y la calidez del Pacífico [cite: 4]</p>
-            <a href="#contacto" class="btn-primary">¡Haz tu reserva ya! [cite: 5]</a>
-        </div>
-    </header>
+  <!-- ===== NAVEGACIÓN ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#inicio" class="nav-logo">
+        <img src="/imagenes/Icono-hotel-carolina-del-mar-bahia-solano.svg" alt="Hotel Carolina del Mar" class="logo-img">
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#inicio">INICIO</a>
+        <a href="#quienes-somos">QUIÉNES SOMOS</a>
+        <a href="#servicios">SERVICIOS</a>
+        <a href="#planes">PLANES</a>
+        <a href="#contactenos">CONTÁCTENOS</a>
+      </div>
+      <div class="nav-social">
+        <a href="https://www.facebook.com/people/Hotel-Carolina-Del-Mar/61556785224331" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/hotelcarolinadelmar_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
 
-    <section id="sobre-nosotros" class="container">
-        <div class="section-title">
-            <h2>SOBRE NOSOTROS [cite: 6]</h2>
-            <h3>Tu Puerta al Paraíso del Pacífico [cite: 7]</h3>
-        </div>
-        <div class="features-grid">
-            <div class="feature-card">
-                <h4>Diversidad natural [cite: 9]</h4>
-                <p>El corazón de la biodiversidad [cite: 11]</p>
-            </div>
-            <div class="feature-card">
-                <h4>Habitaciones temáticas [cite: 12]</h4>
-                <p>Cada habitación es un encanto [cite: 12]</p>
-            </div>
-            <div class="feature-card">
-                <h4>Gastronomía [cite: 13]</h4>
-                <p>Sabores del Pacífico [cite: 14]</p>
-            </div>
-            <div class="feature-card">
-                <h4>Internet Starlink [cite: 15]</h4>
-                <p>Wi-Fi satelital de alta velocidad en todas las instalaciones [cite: 15]</p>
-            </div>
-        </div>
-    </section>
+  <!-- ===== HERO ===== -->
+  <section id="inicio" class="hero">
+    <img
+      class="hero-image"
+      src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1920&q=80"
+      alt="Bahia Solano"
+      loading="eager"
+    >
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="hero-eyebrow">BAHÍA SOLANO, CHOCÓ</span>
+      <h1 class="hero-title">Donde el Pacífico<br>Te Espera</h1>
+      <p class="hero-desc">Hospedaje de lujo en el corazón de la biodiversidad colombiana. Vive la cultura, la naturaleza y la calidez del Pacífico.</p>
+      <a href="#contactenos" class="btn-primary">¡Haz tu reserva ya!</a>
+    </div>
+    <a href="#quienes-somos" class="hero-scroll" aria-label="Desplazar hacia abajo">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+    </a>
+  </section>
 
-    <section id="habitaciones" class="bg-light">
-        <div class="container">
-            <div class="section-title">
-                <h2>NUESTROS SERVICIOS [cite: 16]</h2>
-                <h3>Habitaciones y Experiencias Únicas [cite: 17]</h3>
-                <p>HABITACIONES [cite: 19]</p>
+  <!-- ===== QUIÉNES SOMOS ===== -->
+  <section id="quienes-somos" class="section bg-sand">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">SOBRE NOSOTROS</span>
+        <h2 class="section-title">Tu Puerta al Paraíso del Pacífico</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>El Hotel Carolina del Mar S.A.S es producto de la juntanza de nativos de la región para ofrecer a sus visitantes una experiencia ecoturística inolvidable. Para ello, hemos hecho de sus pasillos, habitaciones y espacios comunes, una expresión de la diversidad natural, gastronómica y cultural del Pacífico colombiano. Entrar en nuestras instalaciones es sumergirse en su asombrosa fauna, en su fascinante flora y en sus milenarias tradiciones.</p>
+          <p>El Hotel Carolina del Mar S.A.S, ubicado en el casco urbano, es su mejor opción mientras visita Bahía Solano. Su perfecta combinación entre lo moderno y lo tradicional, le garantiza un ambiente familiar, personalizado, cálido y seguro. Su agradable ambiente natural le hará sentir que se encuentra en el corazón de la biodiversidad.</p>
+          <p>El HOTEL CAROLINA DEL MAR le ofrece renovados espacios para reuniones, banquetes, eventos sociales y excelente hospedaje. La alta concepción que sentimos del noble ejercicio de la hospitalidad, nos compromete a buscar la excelencia en el servicio, brindando las más apropiadas soluciones a las necesidades de nuestros huéspedes.</p>
+          <div class="about-features">
+            <div class="about-feature">
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+              </div>
+              <div>
+                <strong>Habitaciones temáticas</strong>
+                <p>Cada habitación es un homenaje a la flora y fauna de nuestra región</p>
+              </div>
             </div>
-            <div class="rooms-grid">
-                <div class="card">
-                    <div class="card-img placeholder-img">Imagen Habitación</div>
-                    <div class="card-body">
-                        <h4>Habitación Fauna Superior [cite: 20]</h4>
-                        <ul>
-                            <li>Cama Doble [cite: 20]</li>
-                            <li>TV [cite: 22]</li>
-                            <li>Baño [cite: 23]</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-img placeholder-img">Imagen Habitación</div>
-                    <div class="card-body">
-                        <h4>Habitación Fauna Ejecutiva [cite: 21]</h4>
-                        <ul>
-                            <li>Cama Doble [cite: 21]</li>
-                            <li>TV [cite: 35]</li>
-                            <li>Baño [cite: 26]</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-img placeholder-img">Imagen Habitación</div>
-                    <div class="card-body">
-                        <h4>Habitación Flora Standard [cite: 25]</h4>
-                        <ul>
-                            <li>Cama Doble [cite: 25]</li>
-                            <li>Baño privado [cite: 26]</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-img placeholder-img">Imagen Habitación</div>
-                    <div class="card-body">
-                        <h4>Habitación Flora Doble Standard [cite: 31]</h4>
-                        <ul>
-                            <li>TV [cite: 32]</li>
-                            <li>Internet Wi-Fi [cite: 32]</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-img placeholder-img">Imagen Habitación</div>
-                    <div class="card-body">
-                        <h4>Habitación Fauna Doble Ejecutiva [cite: 33, 34]</h4>
-                        <ul>
-                            <li>TV [cite: 35]</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-img placeholder-img">Imagen Habitación</div>
-                    <div class="card-body">
-                        <h4>Habitación Flora Triple Standard [cite: 36]</h4>
-                        <ul>
-                            <li>TV [cite: 37]</li>
-                            <li>Internet Wi-Fi [cite: 38]</li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="about-feature">
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>
+              </div>
+              <div>
+                <strong>Gastronomía local</strong>
+                <p>Platos característicos de la cocina del Pacífico colombiano</p>
+              </div>
             </div>
-            
-            <div class="amenities-list">
-                <h4>Otros Servicios</h4>
-                <ul>
-                    <li>Restaurante [cite: 28]</li>
-                    <li>Plantas Curativas [cite: 40]</li>
-                    <li>Bebidas Típicas [cite: 41]</li>
-                    <li>Wi-Fi Starlink [cite: 42]</li>
-                </ul>
+            <div class="about-feature">
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>
+              </div>
+              <div>
+                <strong>Internet Starlink</strong>
+                <p>Wi-Fi satelital de alta velocidad en todas las instalaciones</p>
+              </div>
             </div>
+          </div>
         </div>
-    </section>
-
-    <section id="planes" class="container">
-        <div class="section-title">
-            <h2>NUESTROS PLANES [cite: 43]</h2>
-            <h3>Vive Bahía Solano al Máximo [cite: 44]</h3>
+        <div class="about-image">
+          <img src="https://hotelcarolinadelmarbahiasolano.com/wp-content/uploads/2024/05/DSC_0993-scaled.jpg" alt="Hotel Carolina del Mar" loading="lazy">
         </div>
-        <div class="plans-grid">
-            <div class="card plan-card">
-                <h4>El Canto de las Ballenas [cite: 45]</h4>
-                <div class="price">$1.450.000 COP/persona [cite: 46]</div>
-                <div class="price-sub">Tarifa 5-7: $1.200.000 [cite: 47, 49]</div>
-                <h5>El paquete incluye: [cite: 50]</h5>
-                <ul>
-                    <li>Alojamiento Standard [cite: 51]</li>
-                    <li>Alimentación completa (desayuno, almuerzo, cena) [cite: 51]</li>
-                    <li>Avistamiento de las Ballenas en Playa Blanca [cite: 51]</li>
-                    <li>Paseo por Malecón [cite: 51]</li>
-                    <li>IVA y Seguro Hotelero [cite: 52]</li>
-                </ul>
-            </div>
-            <div class="card plan-card">
-                <h4>Playas, Manglares y Esteros [cite: 53]</h4>
-                <div class="price">$1.450.000 COP/persona [cite: 54]</div>
-                <div class="price-sub">Tarifa 5-7: $1.200.000 [cite: 55]</div>
-                <p>Una oportunidad de habitar en familia y conocer el azul del mar [cite: 56, 57]</p>
-                <h5>El paquete incluye: [cite: 59]</h5>
-                <ul>
-                    <li>Alojamiento en habitación [cite: 60]</li>
-                    <li>Alimentación completa [cite: 61]</li>
-                    <li>Recorrido Manglar Pacífico [cite: 62]</li>
-                    <li>La Cascada Nabugá [cite: 63]</li>
-                    <li>IVA y Seguro Hotelero [cite: 65]</li>
-                </ul>
-            </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICIOS ===== -->
+  <section id="servicios" class="section bg-white">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">NUESTROS SERVICIOS</span>
+        <h2 class="section-title">Habitaciones y Experiencias Únicas</h2>
+      </div>
+
+      <div class="rooms-intro">
+        <h3>HABITACIONES</h3>
+        <p>Cada habitación es un homenaje a las especies de flora y fauna de nuestra región. Toda ella te conecta a los paisajes, ecosistemas y ciclos vitales de plantas, animales y microorganismos que habitan el inmenso mar o en los estuarios costeros del Pacífico.</p>
+      </div>
+
+      <div class="rooms-grid">
+        <div class="room-card">
+          <div class="room-img">
+            <img src="https://hotelcarolinadelmarbahiasolano.com/wp-content/uploads/2024/05/DSC_0993-scaled.jpg" alt="Habitación Fauna Superior" loading="lazy">
+          </div>
+          <div class="room-body">
+            <h4>Habitación Fauna Superior</h4>
+            <p class="room-tagline">Nuestra habitación premium con jacuzzi privado.</p>
+            <ul class="amenities">
+              <li>Cama Doble</li><li>Baño privado con jacuzzi</li><li>TV LCD</li><li>Mini bar</li>
+              <li>Internet Wi-Fi</li><li>Escritorio</li><li>Aire acondicionado</li>
+              <li>Secador de pelo</li><li>Cajilla de seguridad</li><li>Insonorizada</li><li>Balcón</li>
+            </ul>
+            <a href="#" class="btn-reservar js-reserva" data-room="Habitación Fauna Superior">Reservar ahora</a>
+          </div>
         </div>
-    </section>
-
-    <section id="multimedia" class="bg-light">
-        <div class="container">
-            <div class="section-title">
-                <h2>GALERIA [cite: 67]</h2>
-                <h3>Bahía Solano en Imágenes [cite: 68]</h3>
-            </div>
-            <div class="gallery-grid">
-                <div class="placeholder-img">Imagen 1</div>
-                <div class="placeholder-img">Imagen 2</div>
-                <div class="placeholder-img">Imagen 3</div>
-                <div class="placeholder-img">Imagen 4</div>
-            </div>
-
-            <div class="section-title" style="margin-top: 4rem;">
-                <h2>VIDEOS [cite: 69]</h2>
-                <h3>Conoce Más Sobre Nosotros [cite: 70]</h3>
-            </div>
-            <div class="video-container placeholder-img">
-                Video Promocional
-            </div>
+        <div class="room-card">
+          <div class="room-img">
+            <img src="https://hotelcarolinadelmarbahiasolano.com/wp-content/uploads/2024/05/Habitacion-Flora-Standard-Doble-scaled.jpg" alt="Habitación Fauna Ejecutiva" loading="lazy">
+          </div>
+          <div class="room-body">
+            <h4>Habitación Fauna Ejecutiva</h4>
+            <p class="room-tagline">Confort y elegancia para tu estadía.</p>
+            <ul class="amenities">
+              <li>Cama Doble</li><li>TV LCD</li><li>Mini bar</li><li>Internet Wi-Fi</li>
+              <li>Escritorio</li><li>Baño privado</li><li>Aire acondicionado</li>
+              <li>Secador de pelo</li><li>Cajilla de seguridad</li><li>Insonorizada</li>
+            </ul>
+            <a href="#" class="btn-reservar js-reserva" data-room="Habitación Fauna Ejecutiva">Reservar ahora</a>
+          </div>
         </div>
-    </section>
-
-    <footer id="contacto" class="footer">
-        <div class="container">
-            <h2>CONTÁCTENOS [cite: 71]</h2>
-            <h3>Reserva Tu Experiencia [cite: 72]</h3>
-            <div class="contact-info">
-                <p><strong>Ubicación:</strong> Bahía Solano (Chocó, Colombia) [cite: 73]</p>
-                <p><strong>Dirección:</strong> Carrera entre calles y 4 Barrio Carmen [cite: 74]</p>
-                <p><strong>Teléfonos:</strong> 314 632 7136 - 320 575 7156 [cite: 75]</p>
-            </div>
-            <div class="socials">
-                <p>Síguenos [cite: 76]</p>
-                <a href="#">Facebook [cite: 77]</a>
-            </div>
+        <div class="room-card">
+          <div class="room-img">
+            <img src="https://hotelcarolinadelmarbahiasolano.com/wp-content/uploads/2024/05/DSC_0995-scaled.jpg" alt="Habitación Fauna Doble Ejecutiva" loading="lazy">
+          </div>
+          <div class="room-body">
+            <h4>Habitación Fauna Doble Ejecutiva</h4>
+            <p class="room-tagline">Espacio ideal para compartir.</p>
+            <ul class="amenities">
+              <li>Dos camas doble</li><li>TV LCD</li><li>Mini bar</li><li>Internet Wi-Fi</li>
+              <li>Baño privado</li><li>Aire acondicionado</li><li>Secador de pelo</li>
+              <li>Cajilla de seguridad</li><li>Insonorizada</li>
+            </ul>
+            <a href="#" class="btn-reservar js-reserva" data-room="Habitación Fauna Doble Ejecutiva">Reservar ahora</a>
+          </div>
         </div>
-    </footer>
+        <div class="room-card">
+          <div class="room-img">
+            <img src="https://hotelcarolinadelmarbahiasolano.com/wp-content/uploads/2024/05/IMG-20240523-WA0020.jpg" alt="Habitación Flora Doble Estándar" loading="lazy">
+          </div>
+          <div class="room-body">
+            <h4>Habitación Flora Doble Estándar</h4>
+            <p class="room-tagline">Perfecta para viajes en grupo.</p>
+            <ul class="amenities">
+              <li>Dos camas doble</li><li>TV LCD</li><li>Internet Wi-Fi</li>
+              <li>Baño privado</li><li>Ventilador</li><li>Insonorizada</li>
+            </ul>
+            <a href="#" class="btn-reservar js-reserva" data-room="Habitación Flora Doble Estándar">Reservar ahora</a>
+          </div>
+        </div>
+        <div class="room-card">
+          <div class="room-img">
+            <img src="https://hotelcarolinadelmarbahiasolano.com/wp-content/uploads/2024/05/IMG-20240523-WA0024.jpg" alt="Habitación Flora Triple Estándar" loading="lazy">
+          </div>
+          <div class="room-body">
+            <h4>Habitación Flora Triple Estándar</h4>
+            <p class="room-tagline">Espacio familiar con camarote.</p>
+            <ul class="amenities">
+              <li>Una cama doble y un camarote</li><li>TV LCD</li><li>Internet Wi-Fi</li>
+              <li>Baño privado</li><li>Aire acondicionado</li><li>Insonorizada</li>
+            </ul>
+            <a href="#" class="btn-reservar js-reserva" data-room="Habitación Flora Triple Estándar">Reservar ahora</a>
+          </div>
+        </div>
+        <div class="room-card">
+          <div class="room-img">
+            <img src="https://hotelcarolinadelmarbahiasolano.com/wp-content/uploads/2024/05/Habitacion-Flora-Standard-Triple-scaled.jpg" alt="Habitación Flora Estándar" loading="lazy">
+          </div>
+          <div class="room-body">
+            <h4>Habitación Flora Estándar</h4>
+            <p class="room-tagline">Comodidad esencial con vista a la naturaleza.</p>
+            <ul class="amenities">
+              <li>Cama Doble</li><li>TV LCD</li><li>Internet Wi-Fi</li>
+              <li>Escritorio</li><li>Baño privado</li><li>Ventilador</li><li>Insonorizada</li>
+            </ul>
+            <a href="#" class="btn-reservar js-reserva" data-room="Habitación Flora Estándar">Reservar ahora</a>
+          </div>
+        </div>
+      </div>
 
-  </body>
+      <!-- Otros servicios -->
+      <div class="other-services">
+        <h3>Otros Servicios</h3>
+        <div class="services-grid">
+          <div class="service-item">
+            <div class="service-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>
+            </div>
+            <h4>Restaurante</h4>
+            <p>Ofrecemos platos característicos de la gastronomía del Pacífico colombiano y los más variados sabores de la cocina chocoana. Cubrimos eventos sociales, reuniones, banquetes y cumpleaños.</p>
+          </div>
+          <div class="service-item">
+            <div class="service-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H7a2 2 0 0 0-2 2v5a2 2 0 0 0 1.962 1.998"/><path d="M15 3h1a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H8"/><line x1="12" y1="12" x2="12" y2="21"/><path d="M8 21h8"/></svg>
+            </div>
+            <h4>Bebidas Típicas</h4>
+            <p>El Viche, el Arrechón y el Curao son bebidas tradicionales del Pacífico a las que se les atribuyen propiedades curativas y afrodisiacas muy apetecidas por viajeros.</p>
+          </div>
+          <div class="service-item">
+            <div class="service-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+            </div>
+            <h4>Plantas Curativas</h4>
+            <p>Con nosotros conocerás las plantas curativas de la región usadas por sabedores y curanderos para tratar diversas enfermedades y alejar energías dañinas.</p>
+          </div>
+          <div class="service-item">
+            <div class="service-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>
+            </div>
+            <h4>Wi-Fi Starlink</h4>
+            <p>Contamos con servicio permanente de Internet Satelital Starlink con cobertura en todas las instalaciones del hotel.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ACTIVIDADES ===== -->
+  <section id="actividades" class="section bg-teal-dark">
+    <div class="container">
+      <div class="section-header section-header--light">
+        <span class="section-label">ACTIVIDADES</span>
+        <h2 class="section-title">Descubre Bahía Solano</h2>
+      </div>
+      <div class="activities-grid">
+        <div class="activity-card">
+          <div class="activity-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h20M2 12c0 5.52 4.48 10 10 10S22 17.52 22 12M2 12C2 6.48 6.48 2 12 2s10 4.48 10 10M12 2v20"/></svg>
+          </div>
+          <h4>Avistamiento de Ballenas</h4>
+          <p>Realiza un emocionante tour en barco y sé testigo de estos majestuosos mamíferos marinos en su hábitat natural.</p>
+        </div>
+        <div class="activity-card">
+          <div class="activity-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 16.98h-5.99c-1.1 0-1.95.95-2.48 1.9A4 4 0 0 1 2 17c.01-.7.2-1.4.57-2"/><path d="m6 17 3.13-5.78c.53-.97.43-2.17-.26-3.05L6 5.47"/><path d="m10.71 14 1.56-3.09"/><path d="M14 9h4l3 3h-2a4 4 0 0 1-4-4"/></svg>
+          </div>
+          <h4>Pesca Deportiva</h4>
+          <p>En Bahía Solano, tendrás la oportunidad de pescar algunas de las especies más codiciadas del Pacífico, como el pez vela, el atún y el dorado.</p>
+        </div>
+        <div class="activity-card">
+          <div class="activity-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/><line x1="6" x2="6" y1="2" y2="4"/><line x1="10" x2="10" y1="2" y2="4"/><line x1="14" x2="14" y1="2" y2="4"/></svg>
+          </div>
+          <h4>Senderismo en la Selva</h4>
+          <p>Embárcate en una aventura a través de exuberantes selvas tropicales y descubre la increíble biodiversidad de la región.</p>
+        </div>
+        <div class="activity-card">
+          <div class="activity-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h4>Visita a Comunidades Locales</h4>
+          <p>Sumérgete en la cultura y la tradición de las comunidades afrocolombianas que habitan en Bahía Solano.</p>
+        </div>
+        <div class="activity-card">
+          <div class="activity-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M23 12a11.05 11.05 0 0 0-22 0zm-5 7a3 3 0 0 1-6 0v-7"/></svg>
+          </div>
+          <h4>Relajación en la Playa</h4>
+          <p>No puedes visitar Bahía Solano sin pasar tiempo en sus hermosas playas de arena dorada bañadas por el Pacífico.</p>
+        </div>
+        <div class="activity-card">
+          <div class="activity-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>
+          </div>
+          <h4>Gastronomía Local</h4>
+          <p>No te pierdas la oportunidad de probar la deliciosa cocina del Pacífico en nuestros restaurantes locales.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PLANES ===== -->
+  <section id="planes" class="section bg-sand">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">NUESTROS PLANES</span>
+        <h2 class="section-title">Vive Bahía Solano al Máximo</h2>
+      </div>
+      <div class="plans-grid">
+        <div class="plan-card">
+          <div class="plan-img">
+            <img src="https://hotelcarolinadelmarbahiasolano.com/wp-content/uploads/2024/05/IMG-20240523-WA0025.jpg" alt="El Canto de las Ballenas" loading="lazy">
+            <span class="plan-badge">TEMPORADA: JULIO – OCTUBRE</span>
+          </div>
+          <div class="plan-body">
+            <h3>El Canto de las Ballenas</h3>
+            <div class="plan-price">
+              <span class="price-main">$1.450.000 COP / persona</span>
+              <span class="price-child">Niños 5–7 años: $1.200.000</span>
+            </div>
+            <p>A finales de julio comienza un fascinante e increíble espectáculo de la naturaleza. La gigante Ballena Yubarta visita a Bahía Solano como parte de su recorrido desde el sur de Chile hasta Costa Rica, buscando aguas cálidas en temporada de reproducción.</p>
+            <h5>El paquete incluye:</h5>
+            <ul class="plan-includes">
+              <li>Traslado aeropuerto – hotel – aeropuerto</li>
+              <li>Alojamiento en habitación Estándar</li>
+              <li>Alimentación completa (desayuno, almuerzo, cena)</li>
+              <li>Tour "El Canto de las Ballenas" (parada en Playa Huina)</li>
+              <li>Día de sol en Playa Blanca (Parque Natural Ensenada de Utría)</li>
+              <li>Tour "El Canto de las Ballenas" (parada en playa Nabugá)</li>
+              <li>Paseo por el Malecón de Ciudad Mutis</li>
+              <li>Guía turístico, IVA y Seguro Hotelero</li>
+            </ul>
+            <p class="plan-note">El plan NO incluye tiquetes aéreos, pero podemos ayudar a tramitarlos.</p>
+            <a href="#" class="btn-reservar js-reserva" data-room="Plan de Ballenas">Reservar ahora</a>
+          </div>
+        </div>
+        <div class="plan-card">
+          <div class="plan-img">
+            <img src="https://hotelcarolinadelmarbahiasolano.com/wp-content/uploads/2024/05/Paisaje-Playas-El-Almejal-scaled.jpg" alt="Playas, Manglares y Esteros" loading="lazy">
+            <span class="plan-badge">DISPONIBLE TODO EL AÑO</span>
+          </div>
+          <div class="plan-body">
+            <h3>Playas, Manglares y Esteros</h3>
+            <div class="plan-price">
+              <span class="price-main">$1.450.000 COP / persona</span>
+              <span class="price-child">Niños 5–7 años: $1.200.000</span>
+            </div>
+            <p>Las vacaciones son una oportunidad para disfrutar en familia, buscar la tranquilidad y el arrullo de la naturaleza, conocer otros horizontes y sentir la riqueza cultural del pueblo colombiano.</p>
+            <h5>El paquete incluye:</h5>
+            <ul class="plan-includes">
+              <li>Traslado aeropuerto – hotel – aeropuerto</li>
+              <li>Alojamiento en habitación Estándar</li>
+              <li>Alimentación completa (desayuno, almuerzo, cena)</li>
+              <li>Parque Natural Ensenada de Utría, senderismo y baño de sol</li>
+              <li>Recorriendo los Manglares del Pacífico en canoas</li>
+              <li>La Cascada de Nabugá, aguas cristalinas de la serranía</li>
+              <li>Paseo por el Malecón de Ciudad Mutis</li>
+              <li>Guía turístico, IVA y Seguro Hotelero</li>
+            </ul>
+            <p class="plan-note">El plan NO incluye tiquetes aéreos, pero podemos ayudar a tramitarlos.</p>
+            <a href="#" class="btn-reservar js-reserva" data-room="Plan de Playas, Manglares y Esteros">Reservar ahora</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALERÍA ===== -->
+  <section id="galeria" class="section bg-white">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">GALERÍA</span>
+        <h2 class="section-title">Bahía Solano en Imágenes</h2>
+      </div>
+      <div class="gallery-grid">
+        <a href="https://hotelcarolinadelmarbahiasolano.com/wp-content/uploads/2024/05/Cascada-de-Nabuga-scaled.jpg" target="_blank" class="gallery-item">
+          <img src="https://hotelcarolinadelmarbahiasolano.com/wp-content/uploads/2024/05/Cascada-de-Nabuga-scaled.jpg" alt="Cascada de Nabugá" loading="lazy">
+        </a>
+        <a href="https://hotelcarolinadelmarbahiasolano.com/wp-content/uploads/2024/06/Bahia-Solano-Lancha.jpg" target="_blank" class="gallery-item">
+          <img src="https://hotelcarolinadelmarbahiasolano.com/wp-content/uploads/2024/06/Bahia-Solano-Lancha.jpg" alt="Bahía Solano - Lancha" loading="lazy">
+        </a>
+        <a href="https://hotelcarolinadelmarbahiasolano.com/wp-content/uploads/2024/05/Paisaje-Ciudad-mutis-noche-1-scaled.jpg" target="_blank" class="gallery-item">
+          <img src="https://hotelcarolinadelmarbahiasolano.com/wp-content/uploads/2024/05/Paisaje-Ciudad-mutis-noche-1-scaled.jpg" alt="Ciudad Mutis de noche" loading="lazy">
+        </a>
+        <a href="https://hotelcarolinadelmarbahiasolano.com/wp-content/uploads/2024/05/IMG-20240523-WA0011.jpg" target="_blank" class="gallery-item">
+          <img src="https://hotelcarolinadelmarbahiasolano.com/wp-content/uploads/2024/05/IMG-20240523-WA0011.jpg" alt="Paisaje de Bahía Solano" loading="lazy">
+        </a>
+        <a href="https://hotelcarolinadelmarbahiasolano.com/wp-content/uploads/2024/05/Paisaje-Playas-El-Almejal-scaled.jpg" target="_blank" class="gallery-item">
+          <img src="https://hotelcarolinadelmarbahiasolano.com/wp-content/uploads/2024/05/Paisaje-Playas-El-Almejal-scaled.jpg" alt="Playa El Almejal" loading="lazy">
+        </a>
+        <a href="https://hotelcarolinadelmarbahiasolano.com/wp-content/uploads/2024/05/IMG-20240523-WA0025.jpg" target="_blank" class="gallery-item">
+          <img src="https://hotelcarolinadelmarbahiasolano.com/wp-content/uploads/2024/05/IMG-20240523-WA0025.jpg" alt="Ballena Yubarta" loading="lazy">
+        </a>
+        <a href="https://hotelcarolinadelmarbahiasolano.com/wp-content/uploads/2024/05/Paisaje-de-la-Bahia-atardecer-scaled.jpg" target="_blank" class="gallery-item">
+          <img src="https://hotelcarolinadelmarbahiasolano.com/wp-content/uploads/2024/05/Paisaje-de-la-Bahia-atardecer-scaled.jpg" alt="Atardecer en Bahía Solano" loading="lazy">
+        </a>
+        <a href="https://hotelcarolinadelmarbahiasolano.com/wp-content/uploads/2024/06/Imagen-de-WhatsApp-2024-05-29-a-las-23.01.56_3b89fb36.jpg" target="_blank" class="gallery-item">
+          <img src="https://hotelcarolinadelmarbahiasolano.com/wp-content/uploads/2024/06/Imagen-de-WhatsApp-2024-05-29-a-las-23.01.56_3b89fb36.jpg" alt="Rana arborícola" loading="lazy">
+        </a>
+        <a href="https://hotelcarolinadelmarbahiasolano.com/wp-content/uploads/2024/06/Coco.jpg" target="_blank" class="gallery-item">
+          <img src="https://hotelcarolinadelmarbahiasolano.com/wp-content/uploads/2024/06/Coco.jpg" alt="Coco tropical" loading="lazy">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACTO ===== -->
+  <section id="contactenos" class="section bg-navy">
+    <div class="container">
+      <div class="section-header section-header--light">
+        <span class="section-label">CONTÁCTENOS</span>
+        <h2 class="section-title">Reserva Tu Experiencia</h2>
+        <p class="section-desc">Las vacaciones son una oportunidad para disfrutar en familia, para buscar la tranquilidad y el arrullo de la naturaleza, conocer otros horizontes e intercambiar la riqueza cultural del pueblo colombiano.</p>
+      </div>
+      <div class="contact-grid">
+        <!-- Info -->
+        <div class="contact-info">
+          <div class="contact-block">
+            <span class="contact-label">Oficina Principal</span>
+            <div class="contact-row">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <p>Bahía Solano (Chocó, Colombia)<br>Carrera 1 entre calles 3 y 4<br>Barrio El Carmen</p>
+            </div>
+          </div>
+          <div class="contact-divider"></div>
+          <div class="contact-block">
+            <span class="contact-label">Contáctenos</span>
+            <div class="contact-row">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.63 3.38 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l.72-.72a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <p>314 632 7136 – 320 575 7156</p>
+            </div>
+            <div class="contact-row">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <a href="mailto:hotelcarolinadelmarsas@gmail.com">hotelcarolinadelmarsas@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-divider"></div>
+          <div class="contact-block">
+            <span class="contact-label">Síguenos</span>
+            <div class="contact-socials">
+              <a href="https://www.facebook.com/people/Hotel-Carolina-Del-Mar/61556785224331" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+              </a>
+              <a href="https://www.instagram.com/hotelcarolinadelmar_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formulario -->
+        <div class="contact-form-wrap">
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label>Nombre *</label>
+                <input type="text" name="nombre" required placeholder="Tu nombre completo">
+              </div>
+              <div class="form-group">
+                <label>Correo electrónico *</label>
+                <input type="email" name="email" required placeholder="tu@email.com">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Adultos</label>
+                <input type="number" name="adultos" min="1" placeholder="1">
+              </div>
+              <div class="form-group">
+                <label>Niños</label>
+                <input type="number" name="ninos" min="0" placeholder="0">
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Reserva (tipo de habitación)</label>
+              <input type="text" name="habitacion" placeholder="Ej. Habitación Fauna Superior">
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Fecha desde</label>
+                <input type="date" name="desde">
+              </div>
+              <div class="form-group">
+                <label>Fecha hasta</label>
+                <input type="date" name="hasta">
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Mensaje</label>
+              <textarea name="mensaje" rows="4" placeholder="Cuéntanos sobre tu estadía ideal..."></textarea>
+            </div>
+            <button type="submit" class="btn-submit">ENVIAR POR WHATSAPP</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p>Derechos reservados © 2025 | HOTEL Carolina del Mar</p>
+      <a href="#">Términos y condiciones</a>
+      <p>Diseñado con ❤ para el Pacífico</p>
+      <p>Diseñado por: Imago Fotodiseño</p>
+    </div>
+  </footer>
+
+  <script>
+    const WA_NUMBER = '573146837296';
+
+    // Menú hamburguesa móvil
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+      hamburger.classList.toggle('active');
+    });
+    // Cerrar menú al hacer clic en un enlace
+    document.querySelectorAll('#navLinks a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        hamburger.classList.remove('active');
+      });
+    });
+    // Scroll suave
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const href = this.getAttribute('href');
+        if (href === '#') return;
+        const target = document.querySelector(href);
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+    // Animacion de mosaico en galeria
+    const galleryGrid = document.querySelector('.gallery-grid');
+    if (galleryGrid) {
+      if ('IntersectionObserver' in window) {
+        const galleryObserver = new IntersectionObserver((entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              galleryGrid.classList.add('is-visible');
+              observer.disconnect();
+            }
+          });
+        }, { threshold: 0.18 });
+        galleryObserver.observe(galleryGrid);
+      } else {
+        galleryGrid.classList.add('is-visible');
+      }
+
+      // Lightbox con pase de fotografias
+      const galleryLinks = Array.from(galleryGrid.querySelectorAll('.gallery-item'));
+      let currentPhoto = 0;
+
+      const lightbox = document.createElement('div');
+      lightbox.className = 'lightbox';
+      lightbox.innerHTML = `
+        <button type="button" class="lightbox-close" aria-label="Cerrar">✕</button>
+        <button type="button" class="lightbox-control lightbox-prev" aria-label="Foto anterior">‹</button>
+        <img class="lightbox-media" alt="">
+        <button type="button" class="lightbox-control lightbox-next" aria-label="Foto siguiente">›</button>
+        <div class="lightbox-caption"></div>
+      `;
+      document.body.appendChild(lightbox);
+
+      const lbMedia = lightbox.querySelector('.lightbox-media');
+      const lbCaption = lightbox.querySelector('.lightbox-caption');
+      const lbClose = lightbox.querySelector('.lightbox-close');
+      const lbPrev = lightbox.querySelector('.lightbox-prev');
+      const lbNext = lightbox.querySelector('.lightbox-next');
+
+      const renderPhoto = (index) => {
+        const total = galleryLinks.length;
+        currentPhoto = (index + total) % total;
+        const link = galleryLinks[currentPhoto];
+        const image = link.querySelector('img');
+        lbMedia.src = link.getAttribute('href') || image?.src || '';
+        lbMedia.alt = image?.alt || 'Foto de galeria';
+        lbCaption.textContent = `${currentPhoto + 1} / ${total} · ${image?.alt || ''}`;
+      };
+
+      const openLightbox = (index) => {
+        renderPhoto(index);
+        lightbox.classList.add('is-open');
+        document.body.style.overflow = 'hidden';
+      };
+
+      const closeLightbox = () => {
+        lightbox.classList.remove('is-open');
+        document.body.style.overflow = '';
+      };
+
+      galleryLinks.forEach((link, index) => {
+        link.addEventListener('click', (event) => {
+          event.preventDefault();
+          openLightbox(index);
+        });
+      });
+
+      lbPrev.addEventListener('click', () => renderPhoto(currentPhoto - 1));
+      lbNext.addEventListener('click', () => renderPhoto(currentPhoto + 1));
+      lbClose.addEventListener('click', closeLightbox);
+
+      lightbox.addEventListener('click', (event) => {
+        if (event.target === lightbox) closeLightbox();
+      });
+
+      document.addEventListener('keydown', (event) => {
+        if (!lightbox.classList.contains('is-open')) return;
+        if (event.key === 'Escape') closeLightbox();
+        if (event.key === 'ArrowLeft') renderPhoto(currentPhoto - 1);
+        if (event.key === 'ArrowRight') renderPhoto(currentPhoto + 1);
+      });
+    }
+
+    // Botones de reserva rápida por habitación
+    document.querySelectorAll('.js-reserva').forEach(btn => {
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        const motivo = this.dataset.room || 'reserva';
+        const text = `Hola, me gustaría reservar. Motivo de reserva: ${motivo}. ¿Me pueden dar más información?`;
+        window.open(`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(text)}`, '_blank');
+      });
+    });
+
+    // Formulario → WhatsApp
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const nombre = this.nombre.value;
+      const email = this.email.value;
+      const adultos = this.adultos.value;
+      const ninos = this.ninos.value;
+      const habitacion = this.habitacion.value;
+      const desde = this.desde.value;
+      const hasta = this.hasta.value;
+      const mensaje = this.mensaje.value;
+      const text = `Hola, me gustaría solicitar una reserva:\n\n*Nombre:* ${nombre}\n*Email:* ${email}\n*Adultos:* ${adultos}\n*Niños:* ${ninos}\n*Habitación:* ${habitacion}\n*Desde:* ${desde}\n*Hasta:* ${hasta}\n*Mensaje:* ${mensaje}`;
+      window.open(`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(text)}`, '_blank');
+    });
+  </script>
+
+</body>
 </html>
