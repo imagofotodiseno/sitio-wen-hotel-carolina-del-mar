@@ -72,38 +72,38 @@
           <p>El Hotel Carolina del Mar S.A.S es producto de la juntanza de nativos de la región para ofrecer a sus visitantes una experiencia ecoturística inolvidable. Para ello, hemos hecho de sus pasillos, habitaciones y espacios comunes, una expresión de la diversidad natural, gastronómica y cultural del Pacífico colombiano. Entrar en nuestras instalaciones es sumergirse en su asombrosa fauna, en su fascinante flora y en sus milenarias tradiciones.</p>
           <p>El Hotel Carolina del Mar S.A.S, ubicado en el casco urbano, es su mejor opción mientras visita Bahía Solano. Su perfecta combinación entre lo moderno y lo tradicional, le garantiza un ambiente familiar, personalizado, cálido y seguro. Su agradable ambiente natural le hará sentir que se encuentra en el corazón de la biodiversidad.</p>
           <p>El HOTEL CAROLINA DEL MAR le ofrece renovados espacios para reuniones, banquetes, eventos sociales y excelente hospedaje. La alta concepción que sentimos del noble ejercicio de la hospitalidad, nos compromete a buscar la excelencia en el servicio, brindando las más apropiadas soluciones a las necesidades de nuestros huéspedes.</p>
-          <div class="about-features">
-            <div class="about-feature">
-              <div class="feature-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
-              </div>
-              <div>
-                <strong>Habitaciones temáticas</strong>
-                <p>Cada habitación es un homenaje a la flora y fauna de nuestra región</p>
-              </div>
-            </div>
-            <div class="about-feature">
-              <div class="feature-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>
-              </div>
-              <div>
-                <strong>Gastronomía local</strong>
-                <p>Platos característicos de la cocina del Pacífico colombiano</p>
-              </div>
-            </div>
-            <div class="about-feature">
-              <div class="feature-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>
-              </div>
-              <div>
-                <strong>Internet Starlink</strong>
-                <p>Wi-Fi satelital de alta velocidad en todas las instalaciones</p>
-              </div>
-            </div>
-          </div>
         </div>
         <div class="about-image">
           <img src="https://hotelcarolinadelmarbahiasolano.com/wp-content/uploads/2024/05/DSC_0993-scaled.jpg" alt="Hotel Carolina del Mar" loading="lazy">
+        </div>
+        <div class="about-features">
+          <div class="about-feature">
+            <div class="feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+            </div>
+            <div>
+              <strong>Habitaciones temáticas</strong>
+              <p>Cada habitación es un homenaje a la flora y fauna de nuestra región</p>
+            </div>
+          </div>
+          <div class="about-feature">
+            <div class="feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>
+            </div>
+            <div>
+              <strong>Gastronomía local</strong>
+              <p>Platos característicos de la cocina del Pacífico colombiano</p>
+            </div>
+          </div>
+          <div class="about-feature">
+            <div class="feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>
+            </div>
+            <div>
+              <strong>Internet Starlink</strong>
+              <p>Wi-Fi satelital de alta velocidad en todas las instalaciones</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -477,7 +477,17 @@
             </div>
             <div class="form-group">
               <label>Reserva (tipo de habitación)</label>
-              <input type="text" name="habitacion" placeholder="Ej. Habitación Fauna Superior">
+              <select name="habitacion" required>
+                <option value="" selected disabled>Selecciona tipo de reserva</option>
+                <option value="Habitación Fauna Superior">Habitación Fauna Superior</option>
+                <option value="Habitación Fauna Ejecutiva">Habitación Fauna Ejecutiva</option>
+                <option value="Habitación Fauna Doble Ejecutiva">Habitación Fauna Doble Ejecutiva</option>
+                <option value="Habitación Flora Doble Estándar">Habitación Flora Doble Estándar</option>
+                <option value="Habitación Flora Triple Estándar">Habitación Flora Triple Estándar</option>
+                <option value="Habitación Flora Estándar">Habitación Flora Estándar</option>
+                <option value="Plan de Ballenas">Plan de Ballenas</option>
+                <option value="Plan de Playas, Manglares y Esteros">Plan de Playas, Manglares y Esteros</option>
+              </select>
             </div>
             <div class="form-row">
               <div class="form-group">
