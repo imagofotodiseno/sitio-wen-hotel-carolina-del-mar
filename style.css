@@ -232,7 +232,6 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 .feature-icon {
   margin: 0 auto 0.6rem;
-<<<<<<< HEAD
   width: 60px; height: 60px;
   display: flex; align-items: center; justify-content: center;
 }
@@ -240,13 +239,6 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   width: 100%;
   height: 100%;
   object-fit: contain;
-=======
-  width: 40px; height: 40px;
-  border-radius: 50%;
-  background: rgba(11,122,117,0.1);
-  display: flex; align-items: center; justify-content: center;
-  color: var(--teal);
->>>>>>> d8df202c53c56501e8075519c06c0022fb839ec9
 }
 .about-feature > div { text-align: center; }
 .about-feature strong { display: block; font-size: 0.95rem; margin-bottom: 0.3rem; color: var(--text-dark); }
@@ -269,11 +261,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   background: var(--sand);
   border-radius: 16px;
   overflow: visible;
-<<<<<<< HEAD
   border: 3px solid #396569;
-=======
-  border: 2px solid #6fa8dc;
->>>>>>> d8df202c53c56501e8075519c06c0022fb839ec9
   display: flex;
   flex-direction: column;
   box-shadow: 0 2px 12px rgba(0,0,0,0.06);
@@ -300,7 +288,6 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   content: '';
   position: absolute;
   left: 50%;
-<<<<<<< HEAD
   top: -30px;
   transform: translateX(-50%);
   width: 60px;
@@ -343,20 +330,6 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   width: 100%;
   height: 100%;
   object-fit: contain;
-}
-=======
-  top: -22px;
-  transform: translateX(-50%);
-  width: 44px;
-  height: 44px;
-  border-radius: 999px;
-  border: 2px solid #6fa8dc;
-  background-color: #ffffff;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%232c7fb8' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M2 9h20'/%3E%3Cpath d='M4 9V6a2 2 0 0 1 2-2h3v5'/%3E%3Cpath d='M15 4h3a2 2 0 0 1 2 2v3'/%3E%3Cpath d='M4 13h16v5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-5z'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: center;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
-  z-index: 2;
 }
 >>>>>>> d8df202c53c56501e8075519c06c0022fb839ec9
 .room-body h4 { font-size: 1rem; font-weight: 600; color: var(--text-dark); margin-bottom: 0.4rem; }
@@ -587,7 +560,6 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   border-radius: 14px;
   padding: 1.75rem 1.5rem;
 }
-<<<<<<< HEAD
 .service-icon {
   width: 60px;
   height: 60px;
@@ -601,9 +573,6 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   height: 100%;
   object-fit: contain;
 }
-=======
-.service-icon { color: var(--teal); margin-bottom: 1rem; }
->>>>>>> d8df202c53c56501e8075519c06c0022fb839ec9
 .service-item h4 { font-size: 1rem; font-weight: 600; color: var(--text-dark); margin-bottom: 0.6rem; }
 .service-item p { font-size: 0.85rem; color: var(--text-grey); line-height: 1.65; }
 
@@ -624,7 +593,6 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   transition: background 0.25s;
 }
 .activity-card:hover { background: rgba(255,255,255,0.15); }
-<<<<<<< HEAD
 .activity-icon {
   width: 60px;
   height: 60px;
@@ -638,9 +606,6 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   height: 100%;
   object-fit: contain;
 }
-=======
-.activity-icon { margin-bottom: 1rem; color: rgba(255,255,255,0.8); }
->>>>>>> d8df202c53c56501e8075519c06c0022fb839ec9
 .activity-card h4 { font-size: 1rem; font-weight: 600; margin-bottom: 0.6rem; }
 .activity-card p { font-size: 0.85rem; color: rgba(255,255,255,0.75); line-height: 1.65; }
 
@@ -871,7 +836,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .video-container {
   position: relative;
   width: 100%;
-  padding-bottom: 56.25%;
+  padding-bottom: 120%;
   height: 0;
   overflow: hidden;
   border-radius: 8px 8px 0 0;
