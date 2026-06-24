@@ -211,7 +211,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
-  align-items: start;
+  align-items: stretch;
 }
 .about-text p { font-size: 0.95rem; line-height: 1.8; color: rgba(26,26,26,0.85); margin-bottom: 1.1rem; }
 .about-features {
@@ -243,8 +243,9 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .about-feature > div { text-align: center; }
 .about-feature strong { display: block; font-size: 0.95rem; margin-bottom: 0.3rem; color: var(--text-dark); }
 .about-feature p { font-size: 0.85rem; color: var(--text-grey); margin: 0; line-height: 1.5; }
-.about-image { border-radius: 16px; overflow: hidden; box-shadow: 0 8px 32px rgba(0,0,0,0.12); }
+.about-image { border-radius: 0; overflow: hidden; box-shadow: none; height: 100%; }
 .about-image img { width: 100%; height: 100%; object-fit: cover; }
+.about-image iframe { width: 100%; height: 100%; border: none; }
 
 /* ===========================
    SERVICIOS / HABITACIONES
@@ -1100,7 +1101,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .activities-grid { grid-template-columns: repeat(2, 1fr); }
   .about-grid { grid-template-columns: 1fr; }
   .about-features { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-  .about-image { max-height: 400px; }
+  .about-image { height: auto; min-height: 400px; }
   .contact-grid { grid-template-columns: 1fr; gap: 2.5rem; }
   .plans-grid { grid-template-columns: 1fr; }
   .gallery-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
