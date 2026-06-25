@@ -275,7 +275,10 @@
               <li>Internet Wi-Fi</li><li>Escritorio</li><li>Aire acondicionado</li>
               <li>Secador de pelo</li><li>Cajilla de seguridad</li><li>Insonorizada</li><li>Balcón</li>
             </ul>
-            <a href="#" class="btn-reservar js-reserva" data-room="Habitación Fauna Superior">Reservar ahora</a>
+            <div class="room-price" style="margin: 10px 0; font-weight: bold; color: #1a365d;">
+    Desde $130.000 <span style="font-size: 0.8rem; color: #666; font-weight: normal;">/ noche</span>
+  </div>
+            <a href="#contactenos" class="btn-primary">¡Haz tu reserva ya!</a>
           </div>
         </div>
         <div class="room-card" data-icon="imagenes/habitacion-fauna-ejecutiva.svg">
@@ -291,7 +294,10 @@
               <li>Escritorio</li><li>Baño privado</li><li>Aire acondicionado</li>
               <li>Secador de pelo</li><li>Cajilla de seguridad</li><li>Insonorizada</li>
             </ul>
-            <a href="#" class="btn-reservar js-reserva" data-room="Habitación Fauna Ejecutiva">Reservar ahora</a>
+            <div class="room-price" style="margin: 10px 0; font-weight: bold; color: #1a365d;">
+    Desde $120.000 <span style="font-size: 0.8rem; color: #666; font-weight: normal;">/ noche</span>
+  </div>
+            <a href="#contactenos" class="btn-primary">¡Haz tu reserva ya!</a>
           </div>
         </div>
         <div class="room-card" data-icon="imagenes/habitacion-fauna-doble.svg">
@@ -307,7 +313,10 @@
               <li>Baño privado</li><li>Aire acondicionado</li><li>Secador de pelo</li>
               <li>Cajilla de seguridad</li><li>Insonorizada</li>
             </ul>
-            <a href="#" class="btn-reservar js-reserva" data-room="Habitación Fauna Doble Ejecutiva">Reservar ahora</a>
+            <div class="room-price" style="margin: 10px 0; font-weight: bold; color: #1a365d;">
+    Desde $120.000 <span style="font-size: 0.8rem; color: #666; font-weight: normal;">/ noche</span>
+  </div>
+            <a href="#contactenos" class="btn-primary">¡Haz tu reserva ya!</a>
           </div>
         </div>
         <div class="room-card" data-icon="imagenes/habitacion-floral-doble.svg">
@@ -322,7 +331,10 @@
               <li>Dos camas doble</li><li>TV LCD</li><li>Internet Wi-Fi</li>
               <li>Baño privado</li><li>Ventilador</li><li>Insonorizada</li>
             </ul>
-            <a href="#" class="btn-reservar js-reserva" data-room="Habitación Flora Doble Estándar">Reservar ahora</a>
+            <div class="room-price" style="margin: 10px 0; font-weight: bold; color: #1a365d;">
+    Desde $100.000 <span style="font-size: 0.8rem; color: #666; font-weight: normal;">/ noche</span>
+  </div>
+            <a href="#contactenos" class="btn-primary">¡Haz tu reserva ya!</a>
           </div>
         </div>
         <div class="room-card" data-icon="imagenes/habitacion-floral-triple.svg">
@@ -337,7 +349,10 @@
               <li>Una cama doble y un camarote</li><li>TV LCD</li><li>Internet Wi-Fi</li>
               <li>Baño privado</li><li>Aire acondicionado</li><li>Insonorizada</li>
             </ul>
-            <a href="#" class="btn-reservar js-reserva" data-room="Habitación Flora Triple Estándar">Reservar ahora</a>
+            <div class="room-price" style="margin: 10px 0; font-weight: bold; color: #1a365d;">
+    Desde $100.000 <span style="font-size: 0.8rem; color: #666; font-weight: normal;">/ noche</span>
+  </div>
+            <a href="#contactenos" class="btn-primary">¡Haz tu reserva ya!</a>
           </div>
         </div>
         <div class="room-card" data-icon="imagenes/habitacion-floral-standard.svg">
@@ -352,7 +367,10 @@
               <li>Cama Doble</li><li>TV LCD</li><li>Internet Wi-Fi</li>
               <li>Escritorio</li><li>Baño privado</li><li>Ventilador</li><li>Insonorizada</li>
             </ul>
-            <a href="#" class="btn-reservar js-reserva" data-room="Habitación Flora Estándar">Reservar ahora</a>
+            <div class="room-price" style="margin: 10px 0; font-weight: bold; color: #1a365d;">
+    Desde $100.000 <span style="font-size: 0.8rem; color: #666; font-weight: normal;">/ noche</span>
+  </div>
+            <a href="#contactenos" class="btn-primary">¡Haz tu reserva ya!</a>
           </div>
         </div>
       </div>
@@ -871,6 +889,12 @@
               <label>Mensaje</label>
               <textarea name="mensaje" rows="4" placeholder="Cuéntanos sobre tu estadía ideal..."></textarea>
             </div>
+
+            <div id="precio-estimado-container" style="display: none; background: #f8f9fa; padding: 15px; border-radius: 8px; margin-bottom: 20px; text-align: center; border: 1px solid #e9ecef;">
+              <span style="font-size: 0.9rem; color: #666; display: block;">Tarifa por noche (aprox):</span>
+              <span id="precio-valor" style="font-size: 1.5rem; font-weight: bold; color: #1a365d;">$0</span>
+              <small style="display: block; color: #888; margin-top: 5px; font-size: 0.8rem;">*El precio total variará según la cantidad de noches.</small>
+            </div>
             <button type="submit" class="btn-submit">RESERVA POR WHATSAPP</button>
           </form>
         </div>
@@ -1079,6 +1103,98 @@
       window.open(`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(text)}`, '_blank');
     });
   </script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // 1. LÓGICA DE PRECIOS
+  const tarifas = {
+    "Habitación Flora Estándar": { 1: 100000, 2: 140000 },
+    "Habitación Flora Doble Estándar": { 1: 100000, 2: 160000, 3: 180000 },
+    "Habitación Flora Triple Estándar": { 1: 100000, 2: 160000, 3: 200000 },
+    "Habitación Fauna Ejecutiva": { 1: 120000, 2: 150000 },
+    "Habitación Fauna Doble Ejecutiva": { 1: 120000, 2: 200000, 3: 230000 },
+    "Habitación Fauna Superior": { 1: 130000, 2: 160000 }
+  };
 
+  const form = document.getElementById('contactForm');
+  const selectHabitacion = form.querySelector('select[name="habitacion"]');
+  const inputAdultos = form.querySelector('input[name="adultos"]');
+  const contenedorPrecio = document.getElementById('precio-estimado-container');
+  const valorPrecio = document.getElementById('precio-valor');
+  let precioActualFormateado = ""; // Guardaremos el precio para el mensaje de WhatsApp
+
+  function calcularPrecio() {
+    const habitacion = selectHabitacion.value;
+    const adultos = parseInt(inputAdultos.value) || 1; 
+
+    if (!habitacion || habitacion.includes("Plan")) {
+      contenedorPrecio.style.display = 'none';
+      precioActualFormateado = "";
+      return;
+    }
+
+    const preciosHabitacion = tarifas[habitacion];
+
+    if (preciosHabitacion) {
+      let precio = preciosHabitacion[adultos];
+      if (precio) {
+        precioActualFormateado = new Intl.NumberFormat('es-CO', { style: 'currency', currency: 'COP', minimumFractionDigits: 0 }).format(precio);
+        valorPrecio.textContent = precioActualFormateado;
+        contenedorPrecio.style.display = 'block';
+      } else {
+        valorPrecio.textContent = "Sujeto a validación";
+        precioActualFormateado = "Sujeto a validación";
+        valorPrecio.style.fontSize = "1.2rem";
+        contenedorPrecio.style.display = 'block';
+      }
+    }
+  }
+
+  selectHabitacion.addEventListener('change', calcularPrecio);
+  inputAdultos.addEventListener('input', calcularPrecio);
+
+  // 2. LÓGICA DE ENVÍO A WHATSAPP
+  form.addEventListener('submit', function(e) {
+    e.preventDefault(); // Evita que la página se recargue
+
+    // Reemplaza este número con el WhatsApp real del hotel (incluye código de país, ej: 57 para Colombia)
+    const telefonoWhatsApp = "573000000000"; 
+
+    // Capturar los valores
+    const nombre = form.querySelector('input[name="nombre"]').value;
+    const email = form.querySelector('input[name="email"]').value;
+    const adultos = form.querySelector('input[name="adultos"]').value || 0;
+    const ninos = form.querySelector('input[name="ninos"]').value || 0;
+    const habitacion = selectHabitacion.value;
+    const desde = form.querySelector('input[name="desde"]').value;
+    const hasta = form.querySelector('input[name="hasta"]').value;
+    const mensaje = form.querySelector('textarea[name="mensaje"]').value;
+
+    // Construir el mensaje formateado
+    let textoWhatsApp = `¡Hola! Me gustaría hacer una reserva.🌊\n\n`;
+    textoWhatsApp += `*Mis datos:*\n`;
+    textoWhatsApp += `- Nombre: ${nombre}\n`;
+    textoWhatsApp += `- Email: ${email}\n\n`;
+    
+    textoWhatsApp += `*Detalles de la estadía:*\n`;
+    textoWhatsApp += `- Habitación/Plan: ${habitacion}\n`;
+    textoWhatsApp += `- Personas: ${adultos} Adultos, ${ninos} Niños\n`;
+    if (desde && hasta) {
+      textoWhatsApp += `- Fechas: Del ${desde} al ${hasta}\n`;
+    }
+    
+    if (precioActualFormateado && !habitacion.includes("Plan")) {
+      textoWhatsApp += `- *Tarifa calculada por noche:* ${precioActualFormateado}\n\n`;
+    }
+
+    if (mensaje) {
+      textoWhatsApp += `*Mensaje adicional:*\n${mensaje}`;
+    }
+
+    // Codificar el texto para URL y abrir WhatsApp
+    const url = `https://wa.me/${telefonoWhatsApp}?text=${encodeURIComponent(textoWhatsApp)}`;
+    window.open(url, '_blank');
+  });
+});
+</script>
 </body>
 </html>
